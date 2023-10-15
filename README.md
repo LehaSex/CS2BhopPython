@@ -38,6 +38,8 @@ bind KP_0 "exec ./temp/jmp_bhop"
 - To activate/deactivate autopistol, press `DEL` on the numeric keypad.
   - Activation/Deactivation information will be displayed in the developer console.
 
+- You can close the program by pressing `F1` key.
+
 If the program is closed, it is necessary to deactivate all functions, otherwise the attack and/or jump will not work for you.
 
 You can change the binds to your own in the `*_standard.cfg` files or adapt the program to your needs.
