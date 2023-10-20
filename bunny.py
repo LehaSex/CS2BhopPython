@@ -86,11 +86,11 @@ async def custom_sleep(ms):
         
 async def bhop():
     while ( not (wa.GetAsyncKeyState(wc.VK_F1) & 0x8000) ):
-        if wg.GetWindowText(wg.GetForegroundWindow()) == "Counter-Strike 2":
+        if wg.GetWindowText(wg.GetForegroundWindow()) == "Counter-Strike Source":
             if wa.GetAsyncKeyState(wc.VK_SPACE) & 0x8000:
                 while (wa.GetAsyncKeyState(wc.VK_SPACE) & 0x8000):
                     wa.mouse_event(wc.MOUSEEVENTF_WHEEL, 0, 0, -wc.WHEEL_DELTA, 0)
-                    await custom_sleep( TICK_64_MS * 2.0 )
+                    await custom_sleep( TICK_64_MS * 3.0 )
             else:
                 await asyncio.sleep(0.001)
     winmm.timeEndPeriod(1)
@@ -98,12 +98,12 @@ async def bhop():
 
 async def autofire():
     while ( not (wa.GetAsyncKeyState(wc.VK_F1) & 0x8000) ):
-        if wg.GetWindowText(wg.GetForegroundWindow()) == "Counter-Strike 2":
+        if wg.GetWindowText(wg.GetForegroundWindow()) == "Counter-Strike Source":
             if wa.GetAsyncKeyState(0x01) & 0x8000:
                 while (wa.GetAsyncKeyState(0x01) & 0x8000): 
                     wa.mouse_event(wc.MOUSEEVENTF_WHEEL, 0, 0, wc.WHEEL_DELTA, 0)
                     
-                    await custom_sleep( TICK_64_MS * 2.0 )
+                    await custom_sleep( TICK_64_MS * 3.0 )
                     
             else:
                 await asyncio.sleep(0.001)
