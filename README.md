@@ -1,7 +1,7 @@
-# CS2BhopPython
+# CSSBhopPython
 
 ## 💬 What is this?
-This is a program for bhop in CS 2. It automatically emulates the scrolling of the mouse wheel, thereby helping in bhop. To launch executable doesn't need Python.
+This is a program for bhop in CS Source. It automatically emulates the scrolling of the mouse wheel, thereby helping in bhop. To launch executable doesn't need Python.
 
 ## 🛠️ Features
 - AutoPistol
@@ -9,7 +9,7 @@ This is a program for bhop in CS 2. It automatically emulates the scrolling of t
 
 ## 🕹️ How To Use
 - To start using, run `.exe` file. 
-- Then place the downloaded folder `/temp` in the folder with the configs of CS 2, which is located at `Counter-Strike Global Offensive\game\csgo\cfg\`
+- Then place the downloaded folder `/temp` in the folder with the configs of CS Source, which is located at `Counter-Strike Source\cstrike\cfg\`
 - The file structure should look like this:
 ```
 .
@@ -18,20 +18,19 @@ This is a program for bhop in CS 2. It automatically emulates the scrolling of t
         └── Steam/
             └── steamapps/
                 └── common/
-                    └── Counter-Strike Global Offensive/
-                        └── game/
-                            └── csgo/
-                                └── cfg/
-                                    └── temp/
-                                        ├── jmp_standart.cfg
-                                        ├── jmp_bhop.cfg
-                                        ├── atk_standart.cfg
-                                        └── atk_auto.cfg
+                    └── Counter-Strike Source/
+                        └── cstrike/
+                            └── cfg/
+                                └── temp/
+                                    ├── jmp_standart.cfg
+                                    ├── jmp_bhop.cfg
+                                    ├── atk_standart.cfg
+                                    └── atk_auto.cfg
 ```
-- Then, run CS 2 and enter the following commands in the developer console:
+- Then, run CS Source and enter the following commands in the developer console:
 ```
-bind KP_DEL "exec ./temp/atk_auto"
-bind KP_0 "exec ./temp/jmp_bhop"
+bind "KP_DEL" "exec ./temp/atk_auto"
+bind "KP_INS" "exec ./temp/jmp_bhop"
 ```
 
 - To activate/deactivate bhop, press `0` on the numeric keypad.
